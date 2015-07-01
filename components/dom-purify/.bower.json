@@ -1,0 +1,40 @@
+{
+  "name": "dom-purify",
+  "authors": [
+    "Peter Kaske <p.kaske@gmail.com>"
+  ],
+  "description": "Simple commponent that uses the DOMPurify library to sanitize it's content.",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "html",
+    "sanitize",
+    "security"
+  ],
+  "main": "dom-purify.html",
+  "license": "MIT",
+  "homepage": "https://github.com/pkaske/dom-purify/",
+  "ignore": [
+    "/.*",
+    "/tests/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "dompurify": "^0.6.4"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "Polymer/web-component-tester#master"
+  },
+  "_release": "c0ffa7591b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c0ffa7591beb79fb96e8e0c638067b9a50b19260"
+  },
+  "_source": "git://github.com/pkaske/dom-purify.git",
+  "_target": "master",
+  "_originalSource": "pkaske/dom-purify",
+  "_direct": true
+}
