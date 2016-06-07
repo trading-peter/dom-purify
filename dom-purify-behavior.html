@@ -25,8 +25,8 @@ Or see the LICENSE file that comes with this code.
       this.innerHTML = DOMPurify.sanitize(this.innerHTML, this.sanitizeOptions);
     },
 
-    sanitizeHtml: function(dirtyHtml) {
-      return DOMPurify.sanitize(dirtyHtml, this.sanitizeOptions);
+    sanitizeHtml: function(dirtyHtml, options) {
+      return DOMPurify.sanitize(dirtyHtml, options || this.sanitizeOptions);
     }
   };
 

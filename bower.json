@@ -1,6 +1,6 @@
 {
   "name": "dom-purify",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "authors": [
     "Peter Kaske <p.kaske@gmail.com>"
   ],
@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.0.0",
-    "dompurify": "^0.7.2"
+    "dompurify": "^0.8.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
