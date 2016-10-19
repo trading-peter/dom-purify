@@ -1,8 +1,9 @@
 {
   "name": "dom-purify",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "authors": [
-    "Peter Kaske <p.kaske@gmail.com>"
+    "Peter Kaske <p.kaske@gmail.com>",
+    "Martynas Kazlauskas <martynas@firmfirm.co>"
   ],
   "description": "Simple commponent that uses the DOMPurify library to sanitize it's content.",
   "keywords": [
