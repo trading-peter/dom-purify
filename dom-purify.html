@@ -4,7 +4,6 @@ Copyright (c) 2015 Peter Kaske <p.kaske@gmail.com>. All rights reserved.
 This code may only be used under the MIT license found at http://opensource.org/licenses/MIT.
 Or see the LICENSE file that comes with this code.
 -->
-<link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="dom-purify-behavior.html">
 
 <!--
@@ -21,17 +20,12 @@ Example
 @demo demo/index.html
 @homepage https://github.com/pkaske/dom-purify
 -->
-<dom-module id="dom-purify"></dom-module>
 <script>
-  Polymer({
-    is: "dom-purify",
-
-    behaviors: [
-      Polymer.DomPurifyBehavior
-    ],
-
-    ready: function() {
+  class FDomPurify extends FBehavior.DomPurify(Polymer.Element) {
+    static get is() { return "dom-purify"; }
+    connectedCallback() {
       this.innerSanitizedHtml();
     }
-  });
+  }
+  customElements.define(FDomPurify.is, FDomPurify);
 </script>

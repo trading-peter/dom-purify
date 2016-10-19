@@ -21,11 +21,15 @@
     "/tests/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.0.0",
-    "dompurify": "^0.8.0"
+    "polymer": "Polymer/polymer#2.0-preview",
+    "dompurify": "firmfirm/dompurify#^0.8.0"
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
-    "web-component-tester": "Polymer/web-component-tester#master"
+    "iron-component-page": "PolymerElements/iron-component-page#2.0-preview",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#v1"
+  },
+  "resolutions": {
+    "webcomponentsjs": "v1",
+    "polymer": "2.0-preview"
   }
 }
