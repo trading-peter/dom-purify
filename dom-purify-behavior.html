@@ -10,19 +10,17 @@ Or see the LICENSE file that comes with this code.
 <script>
   window.FBehavior = window.FBehavior || {};
 
-  FBehavior.DomPurify = Polymer.Utils.dedupingMixin(function(superClass) {
+  FBehavior.DomPurify = Polymer.dedupingMixin(function(superClass) {
     return class DomPurify extends superClass {
-      static get config() {
+      static get properties() {
         return {
-          properties: {
-            sanitizeOptions: {
-              type: Object,
-              value: function() {
-                return {};
-              }
-            }
+          sanitizeOptions: {
+            type: Object,
+            value: function() {
+              return {};
+            },
           },
-        }
+        };
       }
 
       innerSanitizedHtml() {
