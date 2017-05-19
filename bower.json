@@ -1,8 +1,8 @@
 {
   "name": "dom-purify",
-  "version": "1.0.0",
   "authors": [
-    "Peter Kaske <p.kaske@gmail.com>"
+    "Peter Kaske <p.kaske@gmail.com>",
+    "Martynas Kazlauskas <martynas@firmfirm.co>"
   ],
   "description": "Simple commponent that uses the DOMPurify library to sanitize it's content.",
   "keywords": [
@@ -21,11 +21,11 @@
     "/tests/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.0.0",
-    "dompurify": "^0.8.0"
+    "polymer": "~2.0.0",
+    "dompurify": "firmfirm/dompurify#v0.8.5"
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
-    "web-component-tester": "Polymer/web-component-tester#master"
+    "iron-component-page": "~2.0.0",
+    "webcomponentsjs": "~1.0.0"
   }
 }
