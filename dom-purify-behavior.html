@@ -1,17 +1,25 @@
-<link rel="import" href="../polymer/polymer.html">
-<script type="text/javascript" src="../dompurify/src/purify.js"></script>
-
 <!--
 @license
 Copyright (c) 2015 Peter Kaske <p.kaske@gmail.com>. All rights reserved.
 This code may only be used under the MIT license found at http://opensource.org/licenses/MIT.
 Or see the LICENSE file that comes with this code.
 -->
+<link rel="import" href="../polymer/polymer.html">
+<script type="text/javascript" src="../dompurify/src/purify.js"></script>
+
 <script>
   window.FBehavior = window.FBehavior || {};
 
+  /**
+   * FBehavior.DomPurify sanitizes HTML strings
+   *
+   * @polymerMixin
+   */
   FBehavior.DomPurify = Polymer.dedupingMixin(function(superClass) {
-    return class DomPurify extends superClass {
+   /**
+    * @polymerMixinClass
+    */
+    class DomPurify extends superClass {
       static get properties() {
         return {
           sanitizeOptions: {
@@ -31,5 +39,6 @@ Or see the LICENSE file that comes with this code.
         return DOMPurify.sanitize(dirtyHtml, options || this.sanitizeOptions);
       }
     }
+    return DomPurify;
   });
 </script>
